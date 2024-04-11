@@ -24,10 +24,10 @@ def encoder(password):
     return s
 
 def decoder(password):
-    s = ''
+    decoded = ''
     for digit in password:
         encoded_digit = str((int(digit) - 3)%10)
-        s += encoded_digit
-    return s
+        decoded += encoded_digit
+    return decoded
 
 main()
