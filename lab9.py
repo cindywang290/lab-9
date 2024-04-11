@@ -1,3 +1,4 @@
+#Cindy Wang
 def main():
     while True:
         print('''Menu
@@ -29,5 +30,3 @@ def decoder(password):
         encoded_digit = str((int(digit) - 3)%10)
         s += encoded_digit
     return s
-
-main()
