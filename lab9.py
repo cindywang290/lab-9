@@ -18,16 +18,16 @@ def main():
 
 def encoder(password):
     s = ''
-    for digit in (password):
-        encoded_digit = str(int(digit) + 3)
+    for digit in password:
+        encoded_digit = str((int(digit) + 3)%10)
         s += encoded_digit
     return s
 
-# def decoder(password):
-#     s = ''
-#     for digit in (password):
-#         encoded_digit = str(int(digit) - 3)
-#         s += encoded_digit
-#     return s
-#
-# main()
+def decoder(password):
+    s = ''
+    for digit in password:
+        encoded_digit = str((int(digit) - 3)%10)
+        s += encoded_digit
+    return s
+
+main()
